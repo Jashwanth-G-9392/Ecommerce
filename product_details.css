@@ -1,0 +1,153 @@
+
+.Top{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    background-color: lightgray;
+    position: sticky;
+    top:0px;
+    z-index: 1000;
+    }
+    h1{
+    font-size: 30px;
+    margin: 31px 81px;
+    }
+    .TopItems{
+    padding: 5px;
+    position: relative;
+    top:32px;
+    font-size: 20px;
+    }
+    .TopButtons{
+    position: relative;
+    top: 30px;
+    }
+    .count{
+       margin: 0px
+     }
+    span{
+       margin: 10px 5px 10px 10px;
+    }
+    .loginicon{
+    font-size: 25px;
+    position: relative;
+    top: 5px
+    ;
+    }
+    a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding:5px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    }
+    a:hover{
+    background-color: lightgray;
+    }
+    a:visited{
+    background-color: grey;
+    }
+    .LatestProd{
+    text-align: center;
+    }
+    .LPheadings{
+    display: flex;
+    justify-content: center;
+    margin: 20px ;
+    }
+    .fltrdetails{
+       display:flex
+    }
+    .fltrdetails img{
+       height:400px;
+       width: 400px;
+    }
+    .fltrdetails .imgdiv1{
+       margin: 200px 150px;
+    }
+    .fltrdetails .contentDiv1{
+       margin:130px 50px;
+    }
+    .fltrdetails aside{
+      font-size: 40px;
+      width: 400px;
+    }
+    .fltrdetails h2{
+       font-size: 30px;
+       color: lightgray;
+    }
+    .fltrdetails span{
+       font-size: 25px;
+    }
+    .fltrdetails p  {
+       font-size: 25px; 
+       text-align: justify;
+    }
+    .detailsDiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center ;
+    }
+    .itemsdiv{
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    }
+    .itemsdiv1{
+       border: 2px solid gray;
+       margin: 10px;
+       padding: 10px;
+       text-align: center;
+       border-radius: 5px;
+       animation: scrollAnimation 10s linear infinite;
+       }
+    @keyframes scrollAnimation {
+       0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+     }
+    .itemsdiv a{
+       color: white;
+       background-color: black;
+    }
+    .detailsDiv img{
+    width: 300px;
+    height: 300px;
+    }
+    .detailsDiv p{
+    font-size: 20px;
+    white-space: nowrap; 
+    width:400px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .detailsDiv aside{
+    font-size: 25px;
+    white-space: nowrap; 
+    width: 200px;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    footer{
+    text-align: center;
+    font-size: 20px;
+    }
+     
+    .suggestion{
+       display: flex;
+       overflow-x: scroll;
+       /* white-space: nowrap; */
+    }
+    .suggestion img{
+        height: 300px;
+        width:300px;
+    }
+    
+    
