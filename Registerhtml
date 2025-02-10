@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce_Register</title>
+    <style>
+         .Top{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            background-color: lightgray;
+            border-radius: 10px;
+            position: sticky;
+            width: 99%;
+            top:0px;
+            z-index: 1000;
+          } 
+          h1{
+            font-size: 30px;
+            margin: 31px 81px;
+          }
+          .TopItems{
+            padding: 5px;
+            position: relative;
+            top:32px;
+            font-size: 20px;
+          }
+          .TopButtons{
+            position: relative;
+            top: 30px;
+          }
+          .count{
+            margin: 0px
+          }
+          span{
+            margin:10px 5px 10px 10px
+          }
+          .loginicon{
+            font-size: 25px;
+            position: relative;
+            top: 5px
+            ;
+          }
+         .Top a{
+            color: black;
+            text-decoration: none;
+            border: 1px solid gray;
+            padding:5px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 20px;
+            cursor: pointer;
+          }
+         a:hover{
+            background-color: lightgray;
+          }
+          
+          .details{
+            justify-items: center;
+          }
+          label{
+            font-size: 20px;
+            margin: 10px;
+          }
+          input{
+            margin: 15px 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid grey;
+            width: 300px;
+          }
+          .new{
+            margin-right: 130px;
+          }
+          button{
+            font-size: 15px;
+            padding: 5px;
+            background-color: rgb(127, 123, 123);
+            border: 2px solid grey;
+            border-radius: 3px;
+          }
+          hr{
+            margin: 0px 80px;
+          }
+          footer{
+            text-align: center;
+            font-size: 20px;
+          }
+    </style>
+</head>
+<body>
+    <section class="Top">
+        <div class="headDiv"> <h1>Ecommerce</h1></div>
+        <div class="TopItems">
+          <a href="./index.html" style="border-width:0px;">Home</a>
+          <a class="products"  data-id="details" href="./Product_Details.html" style="border-width:0px;">Products</a>
+          <a style="border-width:0px;" href="./aboutUs.html">About</a>
+          <a style="border-width:0px;" href="./contact.html">Contact</a>
+        </div>
+        <div class="TopButtons">
+          <a href="./Login.html" ><ion-icon name="log-in-sharp" class="loginicon" ></ion-icon><span>Login</span></a>
+          <a href="./Register.html" style=" background-color:rgb(148, 146, 146)"> <ion-icon name="person-add-sharp"></ion-icon><span>Register</span></a>
+            <ion-icon name="cart-sharp"></ion-icon>
+            <span>Cart </span>
+            (<span class="count" >0</span>)
+          
+        </div>
+    </section>
+    <br><br>
+    <div class="details">
+        <label>Full Name</label><br>
+        <input type="text" placeholder="Enter Your Name"><br>
+        <label>Email address</label><br>
+        <input type="email" placeholder="name@example.com"><br>
+        <label>Password</label><br>
+        <input type="text" placeholder="Enter your Password"><br>
+        <div class="new"><span>Already has an account ?</span> <a href="./Login.html" class="Register">Login</a></div><br>
+        <button>Login</button>
+    </div>
+    <br><br>
+    <footer>
+        <span>Made with ❤️ by Jashwanth  </span>
+    </footer>
+    <script>
+      count = parseInt(localStorage.getItem("count"));
+      document.querySelector(".count").textContent=count;
+   </script>
+</body>
+</html>
