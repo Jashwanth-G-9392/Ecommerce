@@ -285,4 +285,3 @@ function updateCart(){
 }
 
 console.log(localStorage.getItem("cart[1].title"));
-
